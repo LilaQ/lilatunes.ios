@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		27E6E2182E033DB300B3D082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27E6E2022E033DB100B3D082 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27E6E2092E033DB100B3D082;
+			remoteInfo = lilatunes.ios;
+		};
+		27E6E2222E033DB300B3D082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27E6E2022E033DB100B3D082 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27E6E2092E033DB100B3D082;
+			remoteInfo = lilatunes.ios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27E6E20A2E033DB100B3D082 /* lilatunes.ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lilatunes.ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27E6E2172E033DB300B3D082 /* lilatunes.iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lilatunes.iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27E6E2212E033DB300B3D082 /* lilatunes.iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lilatunes.iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		27E6E20C2E033DB100B3D082 /* lilatunes.ios */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = lilatunes.ios;
+			sourceTree = "<group>";
+		};
+		27E6E21A2E033DB300B3D082 /* lilatunes.iosTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = lilatunes.iosTests;
+			sourceTree = "<group>";
+		};
+		27E6E2242E033DB300B3D082 /* lilatunes.iosUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = lilatunes.iosUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27E6E2072E033DB100B3D082 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27E6E2142E033DB300B3D082 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27E6E21E2E033DB300B3D082 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27E6E2012E033DB100B3D082 = {
+			isa = PBXGroup;
+			children = (
+				27E6E20C2E033DB100B3D082 /* lilatunes.ios */,
+				27E6E21A2E033DB300B3D082 /* lilatunes.iosTests */,
+				27E6E2242E033DB300B3D082 /* lilatunes.iosUITests */,
+				27E6E20B2E033DB100B3D082 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27E6E20B2E033DB100B3D082 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27E6E20A2E033DB100B3D082 /* lilatunes.ios.app */,
+				27E6E2172E033DB300B3D082 /* lilatunes.iosTests.xctest */,
+				27E6E2212E033DB300B3D082 /* lilatunes.iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27E6E2092E033DB100B3D082 /* lilatunes.ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27E6E22B2E033DB300B3D082 /* Build configuration list for PBXNativeTarget "lilatunes.ios" */;
+			buildPhases = (
+				27E6E2062E033DB100B3D082 /* Sources */,
+				27E6E2072E033DB100B3D082 /* Frameworks */,
+				27E6E2082E033DB100B3D082 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				27E6E20C2E033DB100B3D082 /* lilatunes.ios */,
+			);
+			name = lilatunes.ios;
+			packageProductDependencies = (
+			);
+			productName = lilatunes.ios;
+			productReference = 27E6E20A2E033DB100B3D082 /* lilatunes.ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27E6E2162E033DB300B3D082 /* lilatunes.iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27E6E22E2E033DB300B3D082 /* Build configuration list for PBXNativeTarget "lilatunes.iosTests" */;
+			buildPhases = (
+				27E6E2132E033DB300B3D082 /* Sources */,
+				27E6E2142E033DB300B3D082 /* Frameworks */,
+				27E6E2152E033DB300B3D082 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27E6E2192E033DB300B3D082 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				27E6E21A2E033DB300B3D082 /* lilatunes.iosTests */,
+			);
+			name = lilatunes.iosTests;
+			packageProductDependencies = (
+			);
+			productName = lilatunes.iosTests;
+			productReference = 27E6E2172E033DB300B3D082 /* lilatunes.iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		27E6E2202E033DB300B3D082 /* lilatunes.iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27E6E2312E033DB300B3D082 /* Build configuration list for PBXNativeTarget "lilatunes.iosUITests" */;
+			buildPhases = (
+				27E6E21D2E033DB300B3D082 /* Sources */,
+				27E6E21E2E033DB300B3D082 /* Frameworks */,
+				27E6E21F2E033DB300B3D082 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27E6E2232E033DB300B3D082 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				27E6E2242E033DB300B3D082 /* lilatunes.iosUITests */,
+			);
+			name = lilatunes.iosUITests;
+			packageProductDependencies = (
+			);
+			productName = lilatunes.iosUITests;
+			productReference = 27E6E2212E033DB300B3D082 /* lilatunes.iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27E6E2022E033DB100B3D082 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					27E6E2092E033DB100B3D082 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					27E6E2162E033DB300B3D082 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 27E6E2092E033DB100B3D082;
+					};
+					27E6E2202E033DB300B3D082 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 27E6E2092E033DB100B3D082;
+					};
+				};
+			};
+			buildConfigurationList = 27E6E2052E033DB100B3D082 /* Build configuration list for PBXProject "lilatunes.ios" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27E6E2012E033DB100B3D082;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 27E6E20B2E033DB100B3D082 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27E6E2092E033DB100B3D082 /* lilatunes.ios */,
+				27E6E2162E033DB300B3D082 /* lilatunes.iosTests */,
+				27E6E2202E033DB300B3D082 /* lilatunes.iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27E6E2082E033DB100B3D082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27E6E2152E033DB300B3D082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27E6E21F2E033DB300B3D082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27E6E2062E033DB100B3D082 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27E6E2132E033DB300B3D082 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27E6E21D2E033DB300B3D082 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27E6E2192E033DB300B3D082 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27E6E2092E033DB100B3D082 /* lilatunes.ios */;
+			targetProxy = 27E6E2182E033DB300B3D082 /* PBXContainerItemProxy */;
+		};
+		27E6E2232E033DB300B3D082 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27E6E2092E033DB100B3D082 /* lilatunes.ios */;
+			targetProxy = 27E6E2222E033DB300B3D082 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		27E6E2292E033DB300B3D082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 28D66FZKZF;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		27E6E22A2E033DB300B3D082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 28D66FZKZF;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27E6E22C2E033DB300B3D082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 28D66FZKZF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lilaq.lilatunes-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27E6E22D2E033DB300B3D082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 28D66FZKZF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lilaq.lilatunes-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		27E6E22F2E033DB300B3D082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 28D66FZKZF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lilaq.lilatunes-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lilatunes.ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/lilatunes.ios";
+			};
+			name = Debug;
+		};
+		27E6E2302E033DB300B3D082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 28D66FZKZF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lilaq.lilatunes-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lilatunes.ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/lilatunes.ios";
+			};
+			name = Release;
+		};
+		27E6E2322E033DB300B3D082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 28D66FZKZF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lilaq.lilatunes-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = lilatunes.ios;
+			};
+			name = Debug;
+		};
+		27E6E2332E033DB300B3D082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 28D66FZKZF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lilaq.lilatunes-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = lilatunes.ios;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27E6E2052E033DB100B3D082 /* Build configuration list for PBXProject "lilatunes.ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27E6E2292E033DB300B3D082 /* Debug */,
+				27E6E22A2E033DB300B3D082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27E6E22B2E033DB300B3D082 /* Build configuration list for PBXNativeTarget "lilatunes.ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27E6E22C2E033DB300B3D082 /* Debug */,
+				27E6E22D2E033DB300B3D082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27E6E22E2E033DB300B3D082 /* Build configuration list for PBXNativeTarget "lilatunes.iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27E6E22F2E033DB300B3D082 /* Debug */,
+				27E6E2302E033DB300B3D082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27E6E2312E033DB300B3D082 /* Build configuration list for PBXNativeTarget "lilatunes.iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27E6E2322E033DB300B3D082 /* Debug */,
+				27E6E2332E033DB300B3D082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27E6E2022E033DB100B3D082 /* Project object */;
+}
