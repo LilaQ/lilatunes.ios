@@ -8,17 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var settingsViewModel: SettingsViewModel = SettingsViewModel()
+    @StateObject var folderViewModel: FolderViewModel = FolderViewModel(folder: Folder(name: "", subpath: ""))
+        
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+//            TopMenuView()
+//            FolderContainerView()
+            CoverView(viewModel: CoverViewModel.demo())
         }
-        .padding()
+        .environmentObject(settingsViewModel)
+        .environmentObject(folderViewModel)
     }
 }
 
 #Preview {
+    @Previewable @StateObject var folderViewModel: FolderViewModel = FolderViewModel.demo
+    @Previewable @StateObject var settingsViewModel: SettingsViewModel = SettingsViewModel()
     ContentView()
+        .environmentObject(settingsViewModel)
+        .environmentObject(folderViewModel)
 }
