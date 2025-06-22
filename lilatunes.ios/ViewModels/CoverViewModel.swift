@@ -19,7 +19,6 @@ class CoverViewModel: ObservableObject {
     
     let song: Song
     private let musicPlayerService: MusicPlayerService = .shared
-    private let cancellables = Set<AnyCancellable>()
     
     var artistName: String {
         return song.artist
@@ -34,7 +33,15 @@ class CoverViewModel: ObservableObject {
     }
     
     init(song: Song) {
+        print("CoverViewModel init")
+        
         self.song = song
+        
+        currentTime = 0
+        
+        self.isFavorite = (try? PlaylistStorage.favorites.contains(song: song)) ?? false
+        
+        self.musicPlayerService.load(song: song)
         
         //  chain the published var of the service to the viewmodels published var,
         //  so the UI can access it directly and only from its viewmodel
@@ -59,12 +66,23 @@ class CoverViewModel: ObservableObject {
        
         //  play
         if !isPlaying {
-            musicPlayerService.play(song: song)
+            musicPlayerService.play()
         }
         
         //  pause
         else {
             musicPlayerService.pause()
+        }
+    }
+    
+    func toggleFavorite() {
+        self.isFavorite.toggle()
+        
+        do {
+            self.isFavorite ?   try PlaylistStorage.favorites.add(song: song) :
+                                try PlaylistStorage.favorites.remove(song: song)
+        } catch {
+            self.isFavorite.toggle()
         }
     }
     

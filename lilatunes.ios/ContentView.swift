@@ -11,15 +11,21 @@ struct ContentView: View {
     
     @StateObject var settingsViewModel: SettingsViewModel = SettingsViewModel()
     @StateObject var folderViewModel: FolderViewModel = FolderViewModel(folder: Folder(name: "", subpath: ""))
+    @StateObject private var toastManager = ToastManager.shared
+    
+    //  demo
+    @StateObject var coverViewModelDemo = CoverViewModel(song: .demo)
         
     var body: some View {
-        VStack {
+        ZStack {
 //            TopMenuView()
 //            FolderContainerView()
-            CoverView(viewModel: CoverViewModel.demo())
+            CoverView(viewModel: coverViewModelDemo)
         }
         .environmentObject(settingsViewModel)
         .environmentObject(folderViewModel)
+        .environmentObject(toastManager)
+        .toastOverlay(using: toastManager)
     }
 }
 

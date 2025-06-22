@@ -11,6 +11,7 @@ struct CoverView: View {
     
     @State private var showTopBar = true
     @ObservedObject var viewModel: CoverViewModel
+    @EnvironmentObject var toastManager: ToastManager
     
     var body: some View {
         ScrollView {
@@ -45,7 +46,7 @@ struct CoverView: View {
                 //  fav
                 SpringyButton(action: {
                     withAnimation{
-                        viewModel.isFavorite.toggle()
+                        viewModel.toggleFavorite()
                     }
                 }) {
                     Image(systemName: "checkmark.circle.fill")
@@ -127,6 +128,7 @@ struct CoverView: View {
             .frame(height: 100)
             .padding(.horizontal, 20)
             
+#if DEBUG
             Button(action: {
                 withAnimation{
                     showTopBar.toggle()
@@ -135,6 +137,16 @@ struct CoverView: View {
                 Text("# Toggle Top Bar #")
                     .foregroundColor(.red)
             }
+            
+            Button(action: {
+                withAnimation{
+                    toastManager.show("Error while adding Favorite")
+                }
+            }) {
+                Text("# Trigger Toast Message #")
+                    .foregroundColor(.red)
+            }
+#endif
             
         }
         .scrollIndicators(.visible)
@@ -167,7 +179,7 @@ struct CoverView: View {
                     //  toggle fav
                     SpringyButton(action: {
                         withAnimation{
-                            viewModel.isFavorite.toggle()
+                            viewModel.toggleFavorite()
                         }
                     }) {
                         Image(systemName: "checkmark.circle.fill")
@@ -205,4 +217,5 @@ struct CoverView: View {
 
 #Preview {
     CoverView(viewModel: CoverViewModel.demo())
+        .environmentObject(ToastManager.shared)
 }

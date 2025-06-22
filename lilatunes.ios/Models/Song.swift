@@ -8,12 +8,12 @@
 import Foundation
 
 struct Song: Codable, Equatable {
-    let id: Int
+    let id: String
     let title: String
     let artist: String
     let album: String
     let duration: TimeInterval
-    let url: URL?
+    let url: URL
     let coverUrl: URL?
     
     enum CodingKeys: String, CodingKey {
@@ -27,13 +27,13 @@ struct Song: Codable, Equatable {
     }
     
     init(
-        id: Int,
+        id: String,
         title: String,
         artist: String,
         album: String,
         duration: TimeInterval,
-        url: URL? = nil,
-        coverUrl: URL? = nil
+        url: URL,
+        coverUrl: URL?
     ) {
         self.id = id
         self.title = title
@@ -46,7 +46,7 @@ struct Song: Codable, Equatable {
     
     init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.id = try container.decode(Int.self, forKey: .id)
+        self.id = try container.decode(String.self, forKey: .id)
         self.title = try container.decode(String.self, forKey: .title)
         self.artist = try container.decode(String.self, forKey: .artist)
         self.album = try container.decode(String.self, forKey: .album)
@@ -68,13 +68,17 @@ struct Song: Codable, Equatable {
     
     static var demo: Song {
         Song(
-            id: 1,
+            id: "#deadb00b",
             title: "Demo Song",
             artist: "Demo Artist",
             album: "Demo Album",
             duration: 240,
-            url: URL(string: "https://file-examples.com/storage/feaa6a7f0468517af9bc02d/2017/11/file_example_MP3_2MG.mp3"),
+            url: URL(string: "https://file-examples.com/storage/feaa6a7f0468517af9bc02d/2017/11/file_example_MP3_2MG.mp3")!,
             coverUrl: URL(string: "https://media1.jpc.de/image/w1155/front/0/0828765355629.jpg")
         )
+    }
+    
+    static func == (lhs: Song, rhs: Song) -> Bool {
+        lhs.id == rhs.id
     }
 }

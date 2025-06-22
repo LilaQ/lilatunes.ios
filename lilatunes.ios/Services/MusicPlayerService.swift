@@ -15,30 +15,32 @@ class MusicPlayerService: ObservableObject {
     private var player: AVPlayer?
     private var playerItem: AVPlayerItem?
     @Published var isPlaying: Bool = false
+    @Published var currentTime: TimeInterval = 0
     @Published var duration: TimeInterval = 0
     @Published var currentSong: Song? = nil
     @Published var currentPlaylist: Playlist? = nil
     
     private init() {}
     
-    func play(song: Song, playlist: Playlist? = nil) {
-                
+    func load(song: Song, playlist: Playlist? = nil) {
+        
         //  store playlist, if passed
         currentPlaylist = playlist
         
         //  new song?
         if currentSong != song {
-            guard let songUrl = song.url else { return }
-            playerItem = AVPlayerItem(url: songUrl)
+            currentTime = 0
+            duration = song.duration
+            playerItem = AVPlayerItem(url: song.url)
             guard let playerItem else { return }
             player = AVPlayer(playerItem: playerItem)
             currentSong = song
-            load_duration()
         }
+    }
+    
+    func play() {
         player?.play()
         isPlaying = true
-        
-        
     }
     
     func pause() {
@@ -51,50 +53,36 @@ class MusicPlayerService: ObservableObject {
         player = nil
         isPlaying = false
         currentSong = nil
+        currentTime = 0
+        duration = 0
     }
     
     func next() {
         if let playlist = currentPlaylist,
            position_of_current_song < (playlist.songs.count - 1) {
             let next_song = playlist.songs[position_of_current_song + 1]
-            play(song: next_song)
-        }
+            load(song: next_song)
+            play()
+            print("next song")
+        } else { print("next failed") }
     }
     
     func prev() {
         if let playlist = currentPlaylist,
            position_of_current_song > 0 {
             let prev_song = playlist.songs[position_of_current_song - 1]
-            play(song: prev_song)
-        }
+            load(song: prev_song)
+            play()
+            print("prev song")
+        } else { print("prev failed") }
     }
     
-    fileprivate var position_of_current_song: Int {
+    internal var position_of_current_song: Int {
         guard let playlist = currentPlaylist,
               let song = currentSong,
               let index = playlist.songs.firstIndex(of: song) else {
             return -1
         }
         return index
-    }
-    
-    fileprivate func load_duration() -> Void {
-        guard let playerItem = playerItem else { return }
-        let asset = playerItem.asset
-        
-        Task {
-            do {
-                let duration = try await asset.load(.duration)
-                let seconds = CMTimeGetSeconds(duration)
-                await MainActor.run {
-                    self.duration = seconds
-                }
-            } catch {
-                // Handle error, e.g. set duration to 0
-                await MainActor.run {
-                    self.duration = 0
-                }
-            }
-        }
     }
 }
